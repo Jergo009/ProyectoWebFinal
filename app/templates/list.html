@@ -31,9 +31,9 @@
             </table>
         </div>
         <div class="card-footer">
-            <button class="btn btn-primary btn-flat btnTest">
+            <a href="{{ create_url }}" class="btn btn-primary btn-flat btnTest">
                 <i class="fas fa-plus"></i> Nuevo registro
-            </button>
+            </a>
         </div>
     </div>
 {% endblock %}
@@ -55,7 +55,7 @@
                 }).done(function (data) {
                     console.log(data);
                 }).fail(function (jqXHR, textStatus, errorThrown){
-                    alert(textStatus+ ': '+errorThrown);
+                    alert(textStatus+': '+errorThrown);
                 }).always(function (data){
 
                 });
